@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { CotactFormComponent } from './cotact-form/cotact-form.component';
+import { HeaderComponent } from './common-component/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,MatDialogModule],
+  imports: [RouterOutlet,MatDialogModule, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
