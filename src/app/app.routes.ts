@@ -8,6 +8,10 @@ export const routes: Routes = [
     },
     {
         path: 'home',
-        loadComponent: ()=>import('./pages/home/home.component').then(m=>m.HomeComponent)
+        loadChildren: ()=>import('./pages/home/home.route').then(m=>m.routes)
+    },
+    {
+        path: "experience",
+        loadComponent: ()=>import('./pages/experience/experience.component').then(m=>m.ExperienceComponent)
     }
 ];
