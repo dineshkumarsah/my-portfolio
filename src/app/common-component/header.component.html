@@ -1,8 +1,16 @@
 <header class="bg-[#020415] text-white px-4 py-3 flex items-center justify-between">
     <div class="text-xl font-bold">Dinesh Sah</div>
     <nav class="hidden md:flex space-x-6">
-        <a routerLink="/home/content"  class="hover:text-sky-400 transition">Home</a>
+        <a routerLink="/home/content" class="hover:text-sky-400 transition">Home</a>
         <a routerLink="/experience" class="hover:text-sky-400 transition">Experience</a>
+        <a href="/dinesh_kumar_sah.pdf" download
+            class="inline-flex items-center gap-2 px-4 py-2 bg-sky-400 text-white font-medium rounded-md shadow hover:bg-sky-400 transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M12 12v6m0 0l-3-3m3 3l3-3m-3-9v6" />
+            </svg>
+            Download Resume
+        </a>
         <!-- <a  class="hover:text-sky-400 transition">Projects</a>
         <a href="#" class="hover:text-sky-400 transition">Skills</a>
         <a href="#" class="hover:text-sky-400 transition">Deployment</a>
@@ -11,20 +19,20 @@
         <a href="#" class="hover:text-sky-400 transition">Front end</a>
         <a href="#" class="hover:text-sky-400 transition">Backend</a> -->
     </nav>
-   <!-- Mobile menu button -->
+    <!-- Mobile menu button -->
     <button (click)="toggleMenu()" class="md:hidden text-2xl focus:outline-none"> &#9776;</button>
 </header>
 <!-- mobile nav -->
- @if(isOpen){
- <nav class="md:hidden bg-[#020415] text-white px-4 py-2 space-y-2">
-     <a routerLink="/home" class="hover:text-sky-400 transition">Home</a>
-        <a routerLink="/experience" class="block hover:text-sky-400 transition">Experience</a>
-        <!-- <a href="#" class="block hover:text-sky-400 transition">Projects</a>
+@if(isOpen){
+<nav class="md:hidden bg-[#020415] text-white px-4 py-2 space-y-2">
+    <a routerLink="/home" class="hover:text-sky-400 transition">Home</a>
+    <a routerLink="/experience" class="block hover:text-sky-400 transition">Experience</a>
+    <!-- <a href="#" class="block hover:text-sky-400 transition">Projects</a>
         <a href="#" class="block hover:text-sky-400 transition">Skills</a>
         <a href="#" class="block hover:text-sky-400 transition">Deployment</a>
         <a href="#" class="block hover:text-sky-400 transition">Unit test case</a>
         <a href="#" class="block hover:text-sky-400 transition">Repository</a>
         <a href="#" class="block hover:text-sky-400 transition">Front end</a>
         <a href="#" class="block hover:text-sky-400 transition">Backend</a> -->
- </nav>
- }
+</nav>
+}
